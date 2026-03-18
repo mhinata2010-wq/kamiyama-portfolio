@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | 神山まるごと高専</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- ========== First View ========== -->
+  <div class="first-view">
+
+    <!-- Left Sidebar / Mobile Header -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5 C25 5, 5 25, 5 50 L95 50 C95 25, 75 5, 50 5Z" stroke="currentColor" stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
+        <span class="logo-text">. </span>
+      </div>
+
+      <!-- ハンバーガーメニューボタン（スマホ版のみ表示） -->
+      <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="sidebar__nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-index="01">
+              <span class="nav-link__line"></span>
+              <span class="nav-link__text">自己紹介</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#news" class="nav-link" data-index="02">
+              <span class="nav-link__line"></span>
+              <span class="nav-link__text">お知らせ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#works" class="nav-link" data-index="03">
+              <span class="nav-link__line"></span>
+              <span class="nav-link__text">作品集</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-index="04">
+              <span class="nav-link__line"></span>
+              <span class="nav-link__text">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <a href="https://kamiyama.ac.jp/" class="sidebar__contact-link">
+          神山まるごと高専とは...
+        </a>
+      </div>
+    </aside>
+
+    <!-- モバイルメニューオーバーレイ -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li><a href="#about" class="mobile-menu__link">自己紹介</a></li>
+          <li><a href="#news" class="mobile-menu__link">お知らせ</a></li>
+          <li><a href="#works" class="mobile-menu__link">作品集</a></li>
+          <li><a href="#contact" class="mobile-menu__link">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__image">
+        <img src="images/hero.jpg" alt="ヒーロー画像">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__tagline">
+          <span class="tagline-line">テクノロジー×デザインで</span>
+          <span class="tagline-line">未来をつくる</span>
+        </p>
+      </div>
+      <div class="hero__scroll">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========== About Section ========== -->
+  <section id="about" class="section section--about">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__number">01</span>
+        <h2 class="section__title">About</h2>
+        <p class="section__title-ja">自己紹介</p>
+      </div>
+      <div class="about__content">
+        <div class="about__image">
+          <div class="about__image-placeholder"></div>
+        </div>
+        <div class="about__text">
+          <h3 class="about__name">宮地陽大</h3>
+          <p class="about__role">神山まるごと高専 1年生</p>
+          <p class="about__description">
+            過疎地域に新たな魅力を生み出す事が目標です。中学生の頃は放置竹林としても問題視されている竹に着目しました。
+            日々の学びを通じて、より良い未来をデザインすることを目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== News Section ========== -->
+  <section id="news" class="section section--news">
+    <div class="section__inner">
+      <div class="news__layout">
+        <!-- 左側：タイトル＋カテゴリフィルタ -->
+        <div class="news__sidebar">
+          <div class="news__title-area">
+            <div class="news__arc">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 10 C30 10, 10 30, 10 60 C10 90, 30 110, 60 110" stroke="currentColor" stroke-width="1.5"
+                  fill="none" />
+              </svg>
+            </div>
+            <span class="news__vertical-title">お知らせ</span>
+          </div>
+        </div>
+        <!-- 右側：ニュース一覧 -->
+        <div class="news__list">
+          <article class="news__item" data-category="info">
+            <div class="news__meta">
+              <time class="news__date">2026.03.03</time>
+              <span class="news__tag news__tag--info">お知らせ</span>
+            </div>
+            <h3 class="news__item-title">ポートフォリオサイト開設</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Works Section ========== -->
+  <section id="works" class="section section--works">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__number">03</span>
+        <h2 class="section__title">Works</h2>
+        <p class="section__title-ja">作品集</p>
+      </div>
+      <div class="works__grid">
+        <article class="work-card">
+          <div class="work-card__image">
+            <div class="work-card__image-placeholder"></div>
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__tag">Web Design</span>
+            <h3 class="work-card__title">プロジェクト名 01</h3>
+            <p class="work-card__desc">プロジェクトの説明文をここに入れてください。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image">
+            <div class="work-card__image-placeholder"></div>
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__tag">Application</span>
+            <h3 class="work-card__title">プロジェクト名 02</h3>
+            <p class="work-card__desc">プロジェクトの説明文をここに入れてください。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image">
+            <div class="work-card__image-placeholder"></div>
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__tag">Product Design</span>
+            <h3 class="work-card__title">プロジェクト名 03</h3>
+            <p class="work-card__desc">プロジェクトの説明文をここに入れてください。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section id="contact" class="section section--contact">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__number">04</span>
+        <h2 class="section__title">Contact</h2>
+        <p class="section__title-ja">お問い合わせ</p>
+      </div>
+      <div class="contact__content">
+        <p class="contact__lead">お気軽にご連絡ください</p>
+        <form class="contact__form" action="#" method="post">
+          <div class="form-group">
+            <label for="name" class="form-label">お名前</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">メールアドレス</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">メッセージ</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
