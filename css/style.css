@@ -957,6 +957,20 @@ button {
     color: #ffffff;
     transition: color 0.3s ease;
   }
+   /* 自己紹介画像のアレンジ */
+.about__profile-img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* 縦横比を保つ（鼠色の箱と同じ比率） */
+  object-fit: cover;   /* 枠に合わせてきれいに切り抜く */
+  border-radius: 8px;  /* 少し角を丸くして柔らかい印象に */
+  filter: grayscale(20%); /* 少しだけ彩度を落としておしゃれにする（お好みで） */
+  transition: transform 0.3s ease;
+}
+
+/* マウスを乗せた時に少し大きくする演出 */
+.about__profile-img:hover {
+  transform: scale(1.02);
+}
 
   .sidebar--scrolled .logo-text {
     color: #1a1a1a;
