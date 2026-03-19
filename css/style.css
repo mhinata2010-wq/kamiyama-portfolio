@@ -1201,3 +1201,58 @@ button {
   object-fit: cover;
   display: block;
 }
+
+/* ============================================
+   宮地さん専用：水色基調のカスタマイズ
+   ============================================ */
+
+/* 1. About（自己紹介・神山まるごと高専とは）セクション */
+.section--about {
+  background: linear-gradient(135deg, #e0f2f7 0%, #ffffff 100%); /* 薄い水色から白へのグラデーション */
+}
+
+/* 2. Works（作品集）セクション */
+.section--works {
+  background-color: #f0faff; /* 非常に明るい水色（作品画像を引き立てるため） */
+}
+
+/* 3. Contact（お問い合わせ）セクション */
+.section--contact {
+  background-color: #e1f5fe; /* 少しだけ落ち着いた水色 */
+}
+
+/* 4. 見出しの文字色を「神山ブルー」のような深みのある青へ */
+.section__title, 
+.about__name, 
+.work-card__title {
+  color: #01579b; /* 濃い紺色に近い青で読みやすく */
+}
+
+/* セクション番号や日本語の見出し */
+.section__number, 
+.section__title-ja, 
+.about__role {
+  color: #0288d1; /* 明るめの青 */
+}
+
+/* サイドバーの背景も少し水色を混ぜると統一感が出ます（お好みで） */
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-right: 1px solid #e0f2f7;
+}
+
+/* 送信ボタンも水色系にチェンジ */
+.form-submit {
+  background-color: #0288d1;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #01579b;
+}
+
+/* 「神山まるごと高専とは...」のリンクも強調 */
+.sidebar .sidebar__contact-link {
+  color: #0288d1;
+  font-weight: 500;
+}
