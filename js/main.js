@@ -1,4 +1,42 @@
 // ============================================
+// 画像拡大機能 (Works Image Modal)
+// ============================================
+function initImageModal() {
+  const overlay = document.getElementById('image-overlay');
+  const expandedImg = document.getElementById('expanded-image');
+  const closeBtn = document.querySelector('.close-btn');
+  const clickableImages = document.querySelectorAll('.clickable-img');
+
+  if (!overlay || !expandedImg) return;
+
+  // 画像をクリックしたら拡大表示
+  clickableImages.forEach(img => {
+    img.addEventListener('click', () => {
+      overlay.style.display = "block";
+      expandedImg.src = img.src;
+      // 背景スクロールを止める
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // ×ボタンを押したら閉じる
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = "none";
+      document.body.style.overflow = "";
+    });
+  }
+
+  // 背景の黒い部分を押しても閉じる
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  });
+}
+
+// ============================================
 // Scroll Reveal
 // ============================================
 function initScrollReveal() {
@@ -146,5 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initMobileMenu();
   initScrollHeader();
+  initImageModal();
 });
 
