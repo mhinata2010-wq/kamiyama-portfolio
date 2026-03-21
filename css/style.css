@@ -1392,3 +1392,10 @@ button {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* スマホメニューの外部リンクだけ水色にする場合 */
+.mobile-menu__link--external {
+  color: #81d4fa !important;
+  font-size: 1.1rem; /* 少しだけ控えめなサイズに */
+  border-bottom: 1px solid rgba(129, 212, 250, 0.3);
+  padding-bottom: 5px;
+}
