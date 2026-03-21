@@ -136,16 +136,26 @@ function initMobileMenu() {
   // メニュー内のリンククリックで閉じる
   mobileMenu.querySelectorAll(".mobile-menu__link").forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute("href"));
+      const href = link.getAttribute("href");
 
-      // メニューを閉じる
+      // --- ここから追加 ---
+      // 外部リンク（httpで始まる場合）はスムーズスクロールをせずにメニューだけ閉じる
+      if (href.startsWith("http")) {
+        hamburger.classList.remove("is-open");
+        mobileMenu.classList.remove("is-open");
+        document.body.style.overflow = "";
+        return; // ここで処理を終了して、そのままリンク先に飛ばす
+      }
+      // --- ここまで追加 ---
+
+      e.preventDefault();
+      const target = document.querySelector(href);
+
       hamburger.classList.remove("is-open");
       mobileMenu.classList.remove("is-open");
       hamburger.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
 
-      // スムーズスクロール
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
@@ -153,8 +163,6 @@ function initMobileMenu() {
       }
     });
   });
-}
-
 // ============================================
 // Scroll Header (透明 → 白へ切り替え)
 // ============================================
