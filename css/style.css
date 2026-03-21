@@ -1335,3 +1335,60 @@ button {
 .clickable-img {
   cursor: zoom-in;
 }
+/* --- オープニングアニメーションの設定 --- */
+#opening-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #000; /* 真っ黒 */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1.2s ease-in-out;
+}
+
+#opening-text-container {
+  text-align: center;
+  color: #fff;
+}
+
+.opening-name {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  animation: openingFadeIn 1s ease forwards;
+}
+
+.opening-sub {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 0.5em;
+  color: #81d4fa; /* 水色 */
+  opacity: 0;
+  animation: openingFadeIn 1s ease 0.4s forwards;
+}
+
+/* 本サイト側の文字（最初は隠しておく） */
+#hero-tagline {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* 2秒後に発動するクラス */
+.loaded #opening-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loaded #hero-tagline {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes openingFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
