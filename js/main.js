@@ -175,9 +175,10 @@ function initScrollHeader() {
 }
 
 // ============================================
-// Init
+// Init (オープニング演出を含む)
 // ============================================
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('load', () => {
+  // --- 他の機能を動かす ---
   initHeroFallback();
   initScrollReveal();
   initActiveNav();
@@ -185,5 +186,19 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initScrollHeader();
   initImageModal();
+
+  // --- オープニングの2秒タイマー ---
+  const opening = document.getElementById('opening-overlay');
+  if (opening) {
+    setTimeout(() => {
+      // bodyにloadedクラスをつけて、CSSで幕を消す
+      document.body.classList.add('loaded');
+      
+      // アニメーションが終わる頃に要素自体を非表示にする
+      setTimeout(() => {
+        opening.style.display = 'none';
+      }, 1200);
+    }, 2000); // 2000 = 2秒待機
+  }
 });
 
