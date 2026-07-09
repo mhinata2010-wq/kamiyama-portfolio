@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | 神山まるごと高専</title>
+  <title>Portfolio | 宮地陽大</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,10 @@
   <div id="opening-overlay">
     <div id="opening-text-container">
       <span class="opening-name">MIYAJI HINATA</span>
-      <span class="opening-sub">Creative Life</span>
+      <span class="opening-sub">Hidden Value, Delivered.</span>
     </div>
   </div>
+
   <!-- ========== First View ========== -->
   <div class="first-view">
 
@@ -72,7 +73,7 @@
       </nav>
 
       <div class="sidebar__footer">
-        <a href="https://kamiyama.ac.jp/" class="sidebar__contact-link">
+        <a href="https://kamiyama.ac.jp/" class="sidebar__contact-link" target="_blank" rel="noopener">
           神山まるごと高専とは...
         </a>
       </div>
@@ -86,7 +87,10 @@
           <li><a href="#news" class="mobile-menu__link">お知らせ</a></li>
           <li><a href="#works" class="mobile-menu__link">作品集</a></li>
           <li><a href="#contact" class="mobile-menu__link">お問い合わせ</a></li>
-          <li><a href="https://kamiyama.ac.jp/" class="mobile-menu__link mobile-menu__link--external" target="_blank" rel="noopener">神山まるごと高専とは...</a></li>
+          <li>
+            <a href="https://kamiyama.ac.jp/" class="mobile-menu__link mobile-menu__link--external" target="_blank"
+              rel="noopener">神山まるごと高専とは...</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -100,7 +104,7 @@
       <div class="hero__content">
         <p class="hero__tagline" id="hero-tagline">
           <span class="tagline-line">Miyaji Hinata</span>
-          <span class="tagline-line">Creative Life</span>
+          <span class="tagline-line">見えにくい価値を、人に届く形へ</span>
         </p>
       </div>
       <div class="hero__scroll">
@@ -120,14 +124,16 @@
       </div>
       <div class="about__content">
         <div class="about__image">
-        <img src="images/profile.jpg" alt="宮地陽大のプロフィール写真" class="about__profile-img">
+          <img src="images/profile.jpg" alt="宮地陽大のプロフィール写真" class="about__profile-img">
         </div>
         <div class="about__text">
           <h3 class="about__name">宮地陽大</h3>
-          <p class="about__role">神山まるごと高専 1年生</p>
+          <p class="about__role">神山まるごと高専 1年生 / PM志望</p>
           <p class="about__description">
-            過疎地域に新たな魅力を生み出す事が目標です。中学生の頃は放置竹林としても問題視されている竹に着目しました。
-            日々の学びを通じて、より良い未来をデザインすることを目指しています。
+            私は、人や地域の中にある見えにくい価値を見つけ、
+            それを他者に届く形へ翻訳することに関心があります。
+            竹紙制作や生徒会活動などを通して、
+            人と人、人と地域をつなぐPMを目指しています。
           </p>
         </div>
       </div>
@@ -138,6 +144,7 @@
   <section id="news" class="section section--news">
     <div class="section__inner">
       <div class="news__layout">
+
         <!-- 左側：タイトル＋カテゴリフィルタ -->
         <div class="news__sidebar">
           <div class="news__title-area">
@@ -150,14 +157,15 @@
             <span class="news__vertical-title">お知らせ</span>
           </div>
         </div>
+
         <!-- 右側：ニュース一覧 -->
         <div class="news__list">
           <article class="news__item" data-category="info">
             <div class="news__meta">
-              <time class="news__date">2026.03.03</time>
+              <time class="news__date">2026.07.09</time>
               <span class="news__tag news__tag--info">お知らせ</span>
             </div>
-            <h3 class="news__item-title">ポートフォリオサイト開設</h3>
+            <h3 class="news__item-title">ポートフォリオサイトを公開しました</h3>
           </article>
         </div>
       </div>
@@ -165,67 +173,52 @@
   </section>
 
   <!-- ========== Works Section ========== -->
-<!-- ========== Works Section ========== -->
-<section id="works" class="section section--works">
-  <div class="section__inner">
-    <div class="section__header">
-      <span class="section__number">03</span>
-      <h2 class="section__title">Works</h2>
-      <p class="section__title-ja">作品集</p>
+  <section id="works" class="section section--works">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__number">03</span>
+        <h2 class="section__title">Works</h2>
+        <p class="section__title-ja">作品集</p>
+      </div>
+
+      <div class="works__grid">
+
+        <!-- Work 01 -->
+        <article class="work-card">
+          <div class="work-card__image">
+            <img src="images/work01.jpg" alt="竹のしおり" class="work-card__img clickable-img">
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__tag">Bamboo Craft</span>
+            <h3 class="work-card__title">竹のしおり</h3>
+            <p class="work-card__desc">
+              放置竹林問題に着目し、竹に新しい価値を与えるために制作しました。
+              コンテストでは落選しましたが、自分が良いと思うだけでは価値は届かず、
+              相手に伝わる形まで設計する必要があると学びました。
+            </p>
+          </div>
+        </article>
+
+        <!-- Work 02 -->
+        <article class="work-card">
+          <div class="work-card__image">
+            <img src="images/work02.jpg" alt="竹のランプシェード" class="work-card__img clickable-img">
+          </div>
+          <div class="work-card__body">
+            <span class="work-card__tag">Bamboo Craft</span>
+            <h3 class="work-card__title">竹のランプシェード</h3>
+            <p class="work-card__desc">
+              竹紙を光にかざしたときに感じた温かさを活かし、ランプシェードを制作しました。
+              この制作は、竹紙を作ること自体ではなく、
+              誰にどんな価値を届けるのかを考えるきっかけになりました。
+            </p>
+          </div>
+        </article>
+
+      </div>
     </div>
+  </section>
 
-    <div class="works__grid">
-
-      <!-- Work 01 -->
-      <article class="work-card">
-        <div class="work-card__image">
-          <img src="images/work01.jpg" alt="竹のしおり" class="work-card__img clickable-img">
-        </div>
-        <div class="work-card__body">
-          <span class="work-card__tag">Bamboo Craft</span>
-          <h3 class="work-card__title">竹のしおり</h3>
-          <p class="work-card__desc">
-            放置竹林問題に着目し、竹に新しい価値を与えるために制作しました。
-            コンテストでは落選しましたが、自分が良いと思うだけでは価値は届かず、
-            伝わる形まで設計する必要があると学びました。
-          </p>
-        </div>
-      </article>
-
-      <!-- Work 02 -->
-      <article class="work-card">
-        <div class="work-card__image">
-          <img src="images/work02.jpg" alt="竹のランプシェード" class="work-card__img clickable-img">
-        </div>
-        <div class="work-card__body">
-          <span class="work-card__tag">Bamboo Craft</span>
-          <h3 class="work-card__title">竹のランプシェード</h3>
-          <p class="work-card__desc">
-            竹紙を光にかざしたときに感じた温かさを活かし、ランプシェードを制作しました。
-            竹紙を作ること自体ではなく、誰にどんな価値を届けるかを考えるきっかけになりました。
-          </p>
-        </div>
-      </article>
-
-      <!-- Work 03 -->
-      <article class="work-card">
-        <div class="work-card__image">
-          <img src="images/work03.jpg" alt="味彩提案" class="work-card__img clickable-img">
-        </div>
-        <div class="work-card__body">
-          <span class="work-card__tag">Planning / Regional Design</span>
-          <h3 class="work-card__title">味彩提案</h3>
-          <p class="work-card__desc">
-            オンライン販売で見えにくくなる生産者の思いを、
-            箱を通して購入者に届ける提案です。
-            商品そのものだけでなく、届け方によって価値は変わると学びました。
-          </p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
   <!-- ========== Contact Section ========== -->
   <section id="contact" class="section section--contact">
     <div class="section__inner">
@@ -235,7 +228,7 @@
         <p class="section__title-ja">お問い合わせ</p>
       </div>
       <div class="contact__content">
-        <p class="contact__lead">お気軽にご連絡ください</p>
+        <p class="contact__lead">制作・活動・ポートフォリオに関するご連絡はこちらからお願いします。</p>
         <form class="contact__form" action="#" method="post">
           <div class="form-group">
             <label for="name" class="form-label">お名前</label>
@@ -258,13 +251,15 @@
   <!-- ========== Footer ========== -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__copy">&copy; 2026 Portfolio. All rights reserved.</p>
+      <p class="footer__copy">&copy; 2026 Miyaji Hinata Portfolio. All rights reserved.</p>
     </div>
   </footer>
-<div id="image-overlay" class="overlay">
+
+  <div id="image-overlay" class="overlay">
     <span class="close-btn">&times;</span>
     <img class="overlay-content" id="expanded-image">
   </div>
+
   <script src="js/main.js"></script>
 </body>
 
