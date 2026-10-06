@@ -211,3 +211,28 @@ window.addEventListener('load', () => {
   }
 });
 
+
+ // お問い合わせ: 入力値はサーバーへ送信・保存せず、メールアプリへ渡す。
+function initContactForm() {
+  const form = document.querySelector('.contact__form');
+  if (!form) return;
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const name = form.elements.namedItem('name').value.trim();
+    const email = form.elements.namedItem('email').value.trim();
+    const message = form.elements.namedItem('message').value.trim();
+    const body = [
+      'お名前: ' + name,
+      '返信先メールアドレス: ' + email,
+      '',
+      message
+    ].join('\r\n');
+    const subject = 'ポートフォリオへのお問い合わせ';
+    window.location.href = 'mailto:kmc2636@kamiyama.ac.jp?subject='
+      + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    // メールの送信完了は確認できないため、フォームを消去しない。
+  });
+}
+
+window.addEventListener('load', initContactForm);
