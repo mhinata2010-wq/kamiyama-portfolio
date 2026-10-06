@@ -229,7 +229,9 @@
       </div>
       <div class="contact__content">
         <p class="contact__lead">制作・活動・ポートフォリオに関するご連絡はこちらからお願いします。</p>
-        <form class="contact__form" action="#" method="post">
+        <p id="contact-method">入力後、メールアプリが開きます。内容を確認して送信してください。このサイトから直接メールは送信されません。</p>
+        <p>メールアプリが開かない場合は、<a href="mailto:kmc2636@kamiyama.ac.jp">kmc2636@kamiyama.ac.jp</a>へご連絡ください。</p>
+        <form class="contact__form" action="mailto:kmc2636@kamiyama.ac.jp" method="post" enctype="text/plain" aria-describedby="contact-method">
           <div class="form-group">
             <label for="name" class="form-label">お名前</label>
             <input type="text" id="name" name="name" class="form-input" required>
@@ -242,7 +244,7 @@
             <label for="message" class="form-label">メッセージ</label>
             <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
           </div>
-          <button type="submit" class="form-submit">送信する</button>
+          <button type="submit" class="form-submit">メールアプリを開く</button>
         </form>
       </div>
     </div>
