@@ -1409,3 +1409,30 @@ button {
 .type-series__image-link { display: flex; align-items: center; justify-content: center; padding: 16px; background: #eaf0f2; aspect-ratio: 3 / 4; }
 .type-series__image-link:focus-visible { outline: 3px solid #0288d1; outline-offset: 3px; }
 .type-series__image { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+
+/* FIELDNOTE product case study: visual concept, not a screenshot */
+.product-work{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,52px);align-items:center;margin:0 0 56px;padding:clamp(20px,3vw,36px);background:#fff;border:1px solid #dceaf0;border-radius:6px}
+.product-work__visual{position:relative;min-width:0;padding:clamp(14px,2.5vw,28px);background:#e9f1f4;border-radius:4px}
+.product-work__mock{overflow:hidden;min-height:220px;background:#fafcfc;border:1px solid #c8d5da;border-radius:5px;box-shadow:0 16px 32px rgba(17,41,55,.08);font-family:"Inter","Noto Sans JP",sans-serif}
+.product-work__mock-header{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:12px;background:#fff;border-bottom:1px solid #e1e8eb}
+.product-work__brand{font-weight:700;letter-spacing:.06em;font-size:.75rem;color:#243c40}.product-work__brand-dot{color:#50948e}
+.product-work__mock-status{font-size:.55rem;letter-spacing:.1em;color:#7b9299}.product-work__mock-action{font-size:.55rem;color:#fff;background:#456a5a;border-radius:3px;padding:7px 9px}
+.product-work__mock-main{display:grid;grid-template-columns:30px minmax(0,1fr) minmax(82px,31%);min-height:196px}
+.product-work__mock-tools{display:flex;flex-direction:column;align-items:center;gap:13px;padding:12px 0;color:#667d86;background:#fff;border-right:1px solid #e1e8eb;font-size:.85rem}
+.product-work__mock-canvas{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;min-width:0;padding:18px 8px;background-color:#f7faf9;background-image:radial-gradient(#d8e4df 1px,transparent 1px);background-size:16px 16px}
+.product-work__mock-node{display:flex;flex-direction:column;gap:3px;width:min(100%,135px);padding:8px 11px;border:1px solid #c8d9d1;border-left:3px solid #648f79;background:white;box-shadow:0 3px 8px rgba(0,0,0,.04);z-index:1}
+.product-work__mock-node small{font-size:.52rem;color:#7f9690}.product-work__mock-node strong{font-size:.7rem;color:#2b453c}.product-work__mock-node span{font-size:.55rem;color:#647a74}
+.product-work__mock-connector{position:absolute;top:47%;left:50%;height:32px;width:1px;background:#7c9e8d}.product-work__mock-connector:after{content:"";position:absolute;bottom:0;left:-3px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:6px solid #7c9e8d}
+.product-work__mock-panel{display:flex;flex-direction:column;gap:17px;padding:14px 10px;background:#fff;border-left:1px solid #e1e8eb}
+.product-work__mock-panel p{font-size:.58rem;font-weight:600;line-height:1.4;color:#415758}.product-work__mock-bar{display:block;height:9px;border-radius:2px;background:#80a893}.product-work__mock-bar--one{width:48%}.product-work__mock-bar--two{width:72%;margin-left:17%;background:#adc4b1}.product-work__mock-bar--three{width:48%;margin-left:46%;background:#c9ba99}.product-work__mock-panel-note{font-size:.48rem;letter-spacing:.08em;color:#91a3a8}
+.product-work__visual-note{display:block;margin-top:12px;font-size:.6rem;letter-spacing:.1em;color:#758e97}
+.product-work__title{font-family:"Inter",sans-serif;font-size:clamp(1.7rem,3vw,2.4rem);letter-spacing:.03em;line-height:1.25;color:#01579b;margin:12px 0 20px}
+.product-work__subtitle{display:block;font-family:"Noto Sans JP",sans-serif;font-size:.82rem;font-weight:400;letter-spacing:.04em;color:#51636a;margin-top:10px}
+.product-work__description{font-size:.88rem;color:#44535a;line-height:2}
+.product-work__facts{display:grid;gap:12px;margin:22px 0 28px;padding-top:18px;border-top:1px solid #e1e8eb}
+.product-work__facts div{display:grid;grid-template-columns:90px minmax(0,1fr);gap:10px}.product-work__facts dt{font-size:.68rem;font-family:"Inter",sans-serif;color:#71858c;letter-spacing:.05em}.product-work__facts dd{font-size:.75rem;line-height:1.7;color:#364b50;overflow-wrap:anywhere}
+.product-work__link{display:inline-flex;gap:28px;justify-content:space-between;align-items:center;min-height:44px;padding:11px 17px;border:1px solid #01579b;color:#01579b;font-size:.82rem;font-weight:600;transition:background-color .2s,color .2s}
+.product-work__link:hover{background:#01579b;color:white}.product-work__link:focus-visible{outline:3px solid #0288d1;outline-offset:4px}
+@media(max-width:900px){.product-work{grid-template-columns:1fr}.product-work__visual{max-width:680px;width:100%}}
+@media(max-width:480px){.product-work{padding:16px}.product-work__mock-status{display:none}.product-work__facts div{grid-template-columns:1fr;gap:2px}.product-work__mock-main{grid-template-columns:24px minmax(0,1fr) minmax(73px,32%)}.product-work__mock-header{padding:9px}.product-work__mock-panel{padding:12px 7px}}
+@media(prefers-reduced-motion:reduce){.product-work__link{transition:none}}
