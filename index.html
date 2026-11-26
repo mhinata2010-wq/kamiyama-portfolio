@@ -128,13 +128,16 @@
         </div>
         <div class="about__text">
           <h3 class="about__name">宮地陽大</h3>
-          <p class="about__role">神山まるごと高専 1年生 / PM志望</p>
+          <p class="about__role">Design / Engineering / Project Management</p>
           <p class="about__description">
-            私は、人や地域の中にある見えにくい価値を見つけ、
-            それを他者に届く形へ翻訳することに関心があります。
-            竹紙制作や生徒会活動などを通して、
-            人と人、人と地域をつなぐPMを目指しています。
+            人や地域の中にある見えにくい価値を見つけ、設計と制作を通じて人に届く形にすることに関心があります。
+            写真・グラフィック、映像、立体造形、Webプロダクトなど、媒体を横断しながら、
+            コンセプトの立案からデザイン、実装・制作まで自分の手で取り組んでいます。
           </p>
+          <p class="portfolio-practice-label">現在取り組んでいる領域</p>
+          <ul class="portfolio-practice-list">
+            <li>映像・モーションデザイン</li><li>空間・展示設計</li><li>3Dモデリング・立体造形</li><li>UI/UX設計・Web開発</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -179,6 +182,58 @@
         <span class="section__number">03</span>
         <h2 class="section__title">Works</h2>
         <p class="section__title-ja">作品集</p>
+      </div>
+
+      <div class="selected-design" aria-labelledby="selected-design-title">
+        <header class="selected-design__header">
+          <p class="work-card__tag">Selected works / 2026</p>
+          <h3 id="selected-design-title" class="type-series__title">設計から、表現へ。</h3>
+          <p class="type-series__lead">映像の時間、立体の形、展示空間の体験。異なる媒体を通じ、意図を具体的な形へ落とし込む制作に取り組んでいます。</p>
+        </header>
+        <article id="motion-design" class="design-project" aria-labelledby="motion-design-title">
+          <figure class="design-project__figure">
+            <div class="design-project__media design-project__media--motion">
+              <video controls playsinline preload="metadata" poster="images/zone-poster.webp" data-portfolio-src="media/zone-motion.mp4" aria-label="ゾーンのモーションスタディ 約22秒" hidden></video>
+              <p class="design-project__fallback" data-media-fallback role="status">映像データの掲載準備中です。</p>
+            </div>
+            <figcaption>Motion study / 約22秒の制作記録</figcaption>
+          </figure>
+          <div class="design-project__body">
+            <p class="work-card__tag">01 / Motion Design · After Effects</p>
+            <h4 id="motion-design-title" class="design-project__title">ZONE — 集中の可視化</h4>
+            <p>陸上競技の前に経験した「ゾーン」をテーマに、集中へと意識が移り変わる感覚を映像で表現しています。グリッド上で円の大きさと線の動き、リズムを変化させ、静けさと緊張の関係を探っています。</p>
+            <dl class="design-project__facts"><div><dt>担当</dt><dd>コンセプト・映像設計・モーション制作</dd></div><div><dt>状態</dt><dd>映像スタディ / 制作途中</dd></div></dl>
+          </div>
+        </article>
+        <article id="spatial-design" class="design-project design-project--text" aria-labelledby="spatial-design-title">
+          <div class="design-project__body">
+            <p class="work-card__tag">02 / Spatial Design · Exhibition Concept</p>
+            <h4 id="spatial-design-title" class="design-project__title">映像と木工をつなぐ展示設計</h4>
+            <p>映像を単独で見せるのではなく、木工フレームの奥に配置し、鑑賞者の視線を映像へ導く展示を構想しています。神山の自然風景と幾何学的な映像表現を組み合わせ、集中や静けさを感じる空間を設計する試みです。</p>
+            <dl class="design-project__facts"><div><dt>担当</dt><dd>展示コンセプト・木工フレームの設計検討・視線誘導</dd></div><div><dt>状態</dt><dd>構想・設計検討中</dd></div></dl>
+          </div>
+          <div class="design-project__process" aria-label="展示構想の要素">
+            <span class="work-card__tag">Exhibition concept / 構想の要素</span>
+            <div>01 <strong>木工フレーム</strong><small>物理的な境界をつくる</small></div>
+            <div>02 <strong>視線誘導</strong><small>映像へ意識を向ける</small></div>
+            <div>03 <strong>映像表現</strong><small>集中と静けさを伝える</small></div>
+          </div>
+        </article>
+        <article id="plaster-modeling" class="design-project" aria-labelledby="plaster-modeling-title">
+          <figure class="design-project__figure">
+            <div class="design-project__media design-project__media--model">
+              <img data-portfolio-src="images/plaster-modeling.webp" alt="左は石膏像の3Dモデルのレンダリング、右は卓上に置かれた立体の写真" decoding="async" hidden>
+              <p class="design-project__fallback" data-media-fallback role="status">作品画像の掲載準備中です。</p>
+            </div>
+            <figcaption>左：デジタルモデル / 右：立体の実物写真</figcaption>
+          </figure>
+          <div class="design-project__body">
+            <p class="work-card__tag">03 / 3D Modeling · Form Study</p>
+            <h4 id="plaster-modeling-title" class="design-project__title">石膏像の3Dモデリング</h4>
+            <p>石膏像を題材に、自分で3Dモデリングを行いました。顔の起伏や輪郭、頭部から胸部、台座までの形状を立体として捉え、デジタルモデルと実物の見え方を比較しました。</p>
+            <dl class="design-project__facts"><div><dt>担当</dt><dd>3Dモデリング・形状の検討</dd></div><div><dt>成果</dt><dd>デジタルモデル・立体の比較記録</dd></div></dl>
+          </div>
+        </article>
       </div>
 
       <div class="type-series" aria-labelledby="type-series-title">
@@ -352,6 +407,7 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/portfolio-media.js" defer></script>
 </body>
 
 </html>
